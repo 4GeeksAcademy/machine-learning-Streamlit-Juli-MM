@@ -7,7 +7,7 @@ with open('/workspaces/machine-learning-Streamlit-Juli-MM/models/tree_classifier
     model = pickle.load(file)
 
 # Streamlit app
-def main():
+
     st.title("Diabetes Predictor")
     
     st.write("This predictor uses a Decision Tree optimized model with a 80% accuracy in predicting, based on diagnostic measures, whether or not a patient has diabetes.")
@@ -34,5 +34,3 @@ def main():
         except Exception as e:
             st.error(f"An error occurred during prediction: {e}")
 
-if __name__ == '__main__':
-    main()
